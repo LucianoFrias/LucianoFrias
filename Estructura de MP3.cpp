@@ -1,4 +1,5 @@
-// Nombre/Apellido: Luciano Frias Institucion: ISFT 151
+// Nombre y apellido: Luciano Frias
+// Institucion: ISFT 151
 
 #include <iostream>
 #include <string>
