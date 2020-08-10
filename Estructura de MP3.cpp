@@ -1,3 +1,5 @@
+// Nombre/Apellido: Luciano Frias Institucion: ISFT 151
+
 #include <iostream>
 #include <string>
 using namespace std;
@@ -18,13 +20,13 @@ int main()
     cin >> Cancion.titulo;
     cout << "Ingrese la duracion de la cancion (con punto): ";
     cin >> Cancion.duracion;
-    cout << "Ingrese el tamaño del fichero en KBs: ";
+    cout << "Ingrese el tamaÃ±o del fichero en KBs: ";
     cin >> Cancion.tamanio;
 
     cout << "El nombre del artista es: " << Cancion.artista << endl;
     cout << "El titulo de la cancion es: " << Cancion.titulo << endl;
     cout << "La duracion de la cancion es: " << Cancion.duracion << endl;
-    cout << "El tamaño del fichero es: " << Cancion.tamanio << endl;
+    cout << "El tamaÃ±o del fichero es: " << Cancion.tamanio << endl;
 
     return 0;
 }
