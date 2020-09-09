@@ -31,7 +31,6 @@ int main()
     {
         Entrada.open("Musica.txt", ios::in); // Abrimos el archivo, leyendolo.
            if(Entrada.is_open())
-        {
             while(!Entrada.eof())
             {
                 Entrada >> archivos[NumeroDeArchivos].tamanio;
@@ -41,9 +40,11 @@ int main()
                 getline(Entrada, archivos[NumeroDeArchivos].nombre);
 
                 if((!archivos[NumeroDeArchivos].nombre.empty()) && (archivos[NumeroDeArchivos].tamanio != 0)) // Si el tamaño no es 0                {
+                    {
                     NumeroDeArchivos++;
                 }
             }
+
 
         Entrada.close();
 
@@ -115,3 +116,4 @@ int main()
         while (opcion != 5);
             return 0;
 }
+
