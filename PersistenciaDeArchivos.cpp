@@ -29,7 +29,7 @@ int main()
 
     do
     {
-        Entrada.open("Musica.txt", ios::in) // Abrimos el archivo, leyendolo.
+        Entrada.open("Musica.txt", ios::in); // Abrimos el archivo, leyendolo.
            if(Entrada.is_open())
         {
             while(!Entrada.eof())
@@ -44,8 +44,9 @@ int main()
                     NumeroDeArchivos++;
                 }
             }
-        }
+
         Entrada.close();
+
         // Menu Principal
         cout << endl;
         cout << "Escoja una opción:" << endl;
@@ -114,4 +115,3 @@ int main()
         while (opcion != 5);
             return 0;
 }
-
