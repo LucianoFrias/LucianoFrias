@@ -19,7 +19,8 @@ int i; // Contador para los bucles while y for
 int opcion; // Para elejir una opcion en el menu
 string TextoArchivo; // Pedimos datos al usuario
 int NumeroTamanio; // Para pedir los archivos a partir de cierto tamaño
-ofstream documento; // Nombre del documento en el que se almacenaran los datos
+ifstream Entrada; // Nombre de la variable para leer archivos
+ofstream Salida; // Nombre de la variable para escribir y guardar archivos
 
 // Empieza la ejecucion del programa aqui
 int main()
@@ -28,6 +29,23 @@ int main()
 
     do
     {
+        Entrada.open("Musica.txt", ios::in) // Abrimos el archivo, leyendolo.
+           if(Entrada.is_open())
+        {
+            while(!Entrada.eof())
+            {
+                Entrada >> archivos[NumeroDeArchivos].tamanio;
+
+                Entrada.get( );
+
+                getline(Entrada, archivos[NumeroDeArchivos].nombre);
+
+                if((!archivos[NumeroDeArchivos].nombre.empty()) && (archivos[NumeroDeArchivos].tamanio != 0)) // Si el tamaño no es 0                {
+                    NumeroDeArchivos++;
+                }
+            }
+        }
+        Entrada.close();
         // Menu Principal
         cout << endl;
         cout << "Escoja una opción:" << endl;
@@ -48,11 +66,13 @@ int main()
                     cin >> archivos[NumeroDeArchivos].nombre;
                     cout << "Introduzca el tamaño del archivo: " << endl;
                     cin >> archivos[NumeroDeArchivos].tamanio;
-                    NumeroDeArchivos++;
-                    // Almaceno los nombres y tamaños en un archivo txt
-                    documento.open("NombresyTamaños.txt");
-                    documento << archivos[i].nombre << " " << archivos[i].tamanio << endl;
-                    documento.close();
+                    Salida.open("Musica.txt", ios::app);
+                if (Salida.is_open())
+                {
+                    Salida << archivos[NumeroDeArchivos].tamanio << " " << archivos[NumeroDeArchivos].nombre << endl;
+                }
+                Salida.close();
+                NumeroDeArchivos++;
                 }
                 else // Si no queda hueco, nos avisara el programa
                     cout << "Numero de archivos limite alcanzado." << endl;
