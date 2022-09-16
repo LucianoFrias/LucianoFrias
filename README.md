@@ -5,4 +5,4 @@ Hello there! I am Luciano, Software Developer and PC Repairing Technician. I alw
 
 If you want to contact me, send an email to: lucianofrias1@hotmail.com
 
-LinkedIn: ###
+LinkedIn: https://www.linkedin.com/in/luciano-frias-1439b71b7/
