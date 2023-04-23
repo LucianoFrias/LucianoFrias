@@ -7,7 +7,7 @@
 I always try to help those in times of need and I am very passionate about what I do.
 The main tools that I use are: 
 
-1. #0969DA Backend: 
+1. Backend: 
 -  Java (Spring Boot)
 -  C++
 -  C# .NET
