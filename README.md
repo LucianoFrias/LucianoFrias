@@ -8,15 +8,15 @@ I always try to help those in times of need and I am very passionate about what 
 The main tools that I use are: 
 
 1. Backend: 
--  Java (Spring Boot)
--  C++
--  C# .NET
--  JavaScript (NodeJS)
+    -  Java (Spring Boot)
+    -  C++
+    -  C# .NET
+    -  JavaScript (NodeJS)
 
 2. Databases:
--  MySQL
--  MongoDB
--  PostgreSQL
+    -  MySQL
+    -  MongoDB
+    -  PostgreSQL
 
 If you want to contact me, send an email to: lucianofrias1@hotmail.com
 
