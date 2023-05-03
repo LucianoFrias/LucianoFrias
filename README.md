@@ -16,7 +16,7 @@ The main tools that I use are:
 2. Databases:
     -  MySQL
     -  MongoDB
-    -  PostgreSQL
+    -  Microsoft SQL Server
     
 3. Frontend:
     - HTML
